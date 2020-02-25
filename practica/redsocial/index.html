@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="/practica/styles.css">
+    <title>Bootstrap</title>
+</head>
+<body>
+
+    <header class="bg-primary py-2"><!-- PY= Padding en el eje Y MT= Margin top -->
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <a href="">
+                        <img src="/images/logo.png" alt="">
+                    </a>
+                </div>
+                <div class="col">
+                    <form action="">
+                        <div class="row no-gutters">
+                            <div class="col-10">
+                                <input class="bg-white w-100 border-0 px-4 rounded-left" type="text" placeholder="Amigos, lugares y cosas que te gustan...">
+                            </div>
+                        
+
+                            <div class="col-2">
+                                <button class="bg-white w-100 border-0 px-4 rounded-right"><i class="fas fa-search"></i></button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <nav class="col d-flex justify-content-between ml<auto"> <!--ML: Margin left-->
+                    <a href=""><i class="fas fa-users text-white"></i></a>
+                    <a href=""><i class="fas fa-bell text-white"></i></a>
+                    <a href=""><i class="fas fa-comments text-white"></i></a>
+                    <a href=""><img class="rounded-circle" src="/images/persona2.jpg" width="22" height="22" alt=""></a>
+                </nav>    
+            </div>
+        </div>
+    </header> 
+
+    <main class="container mt-4">
+        <div class="row">
+            <div class="col">
+                <nav>
+                    <a href="" class="d-block p-2 text-decoration-none text-secondary"><i class="fas fa-users mr-3"></i> Amigos </a>
+                    <a href="" class="d-block p-2 text-decoration-none text-secondary"><i class="fas fa-envelope mr-3"></i> Mensajes Privados </a>
+                    <a href="" class="d-block p-2 text-decoration-none text-secondary"><i class="fas fa-thumbs-up mr-3"></i> Páginas </a>
+                    <a href="" class="d-block p-2 text-decoration-none text-secondary"><i class="fas fa-play mr-3"></i> Videos </a>
+                    <a href="" class="d-block p-2 text-decoration-none text-secondary"><i class="fas fa-file-image mr-3"></i> Fotos </a>
+                    <a href="" class="d-block p-2 text-decoration-none text-secondary"><i class="fas fa-book mr-3"></i> Libros</a>
+                </nav>
+            </div>
+
+            <div class="col">
+                <div class="row">
+                    <div class="col-auto"> <!-- Se adapta al tamaño de lo que tenga el contenido-->
+                        <a href=""><img class="rounded-circle" src="/images/persona2.jpg" width="60" height="60" alt=""></a>
+                    </div>
+                    <div class="col">
+                        <form action="">
+                            <textarea class="w-100 px-3 shadow-sm"  placeholder="Publicar mensajes" name="" id=""></textarea>
+                            <div class="d-flex justify-content-between border-bottom py-3">
+                                <div>
+                                    <a class="text-secondary" href=""><i class="fas fa-file-image mr-3"></i></a>
+                                    <a class="text-secondary" href=""><i class="fas fa-play mr-3"></i></a>
+                                    <a class="text-secondary" href=""><i class="fas fa-music mr-3"></i></a>
+                                </div>
+                                <div>
+                                    <button class="px-4 bg-primary text-white rounded border-0 ">Publicar</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div> 
+
+
+
+
+                <!-- PUBLICIDADES -->
+
+                <div class="row">
+                    <div class="col-auto">
+                        <a href="">
+                            <img class="rounded-circle" width="60" height="60" src="/images/persona2.jpg" alt="">
+                        </a>
+                    </div>
+
+                    <div class="col">
+                        <div class="pb-2"> <!--PB= Padding bottom-->
+                            <h5><a href="">Andrea Gómez</a></h5>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta aspernatur autem, quasi odio consectetur, nobis eius fugit totam, atque quibusdam suscipit ab adipisci harum aliquid nemo minus necessitatibus vero excepturi?</p>
+
+                        <div class="d-flex justify-content-between">
+                            <button class="bg-primary text-white border-0 rounded py-0 px-4"><i class="fas fa-thumbs-up"></i></button>
+                            <p class="text-primary mb-0 py-2 border-0">15 <i class="fas fa-thumbs-up"></i> </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-10 offset-2">
+                        <div class="row no-gutters mt-4 pb-3 border-bottom"> <!-- Border bottom es similar a HR-->
+                            <div class="col-auto">
+                                <a href="">
+                                    <img class="rounded-circle mr-4" width="40" height="40" src="/images/persona2.jpg" alt=""></a>
+                            </div>
+
+                            <div class="col">
+                                <form action="">
+                                    <textarea class="w-100 border text-secondary" name="" id="" placeholder="Comentario"></textarea>
+                                </form>
+                            </div>
+                        </div>
+
+
+                        <div class="row no-gutters my-3 pb-3 border-bottom">
+                            <div class="col-auto">
+                                <a href="">
+                                    <img class="rounded-circle mr-4" width="40" height="40" src="/images/persona2.jpg" alt="">
+                                </a>
+                            </div>
+
+                            <div class="col">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia veniam doloremque laboriosam ipsam minima iure eos repellat vitae incidunt odio cupiditate nisi, commodi nemo autem quod ullam laudantium alias. Quo!</p>
+                                <a href="">Me gusta</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+<!-- D-NONE para quitar una columna-->
+
+
+
+         </div>
+
+    </main>
+
+
+
+
+    <script src="../../js/bootstrap.min.js"></script>
+    <script src="../../js/jquery-3.4.1.min.js"></script>
+    <script src="../../js/popper.min.js"></script>
+    <script src="https://kit.fontawesome.com/cd2331958e.js" crossorigin="anonymous"></script>
+</body>
+</html>
